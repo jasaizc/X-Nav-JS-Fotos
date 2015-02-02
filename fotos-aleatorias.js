@@ -15,10 +15,12 @@ function CambiaFotos(){
     changer('imagen', imagenrandom)
     
 }
-function CambiaFotosEnHTML(){
-    imagenrandom = imagenAleatoria()
-
-    changer('imagen', imagenrandom)
+function CambiaFotosEnHTML(){  
+     
+     valor = aleatorio(1,4);
+     id = 'imagen' + valor;   
+     var element = document.getElementById(id);
+     element.style.visibility = 'visible';
     
 }
 
